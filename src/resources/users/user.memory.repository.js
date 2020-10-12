@@ -1,4 +1,7 @@
-const DB = require('../../common/inMemoryDb');
+const User = require('./user.model');
+
+const DB = [];
+DB.push(new User(), new User(), new User());
 
 const getAll = async () => DB;
 
